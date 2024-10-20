@@ -1,0 +1,164 @@
+/* General Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #121212; /* Dark background for contrast */
+}
+
+/* App Container */
+.App {
+  text-align: center;
+}
+
+/* Logo Styles */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #1c1f24; /* Darker background for header */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #f0f0f0; /* Light color for text */
+}
+
+/* Link Styles */
+.App-link {
+  color: #81d4fa; /* Light blue for links */
+}
+
+/* Keyframes for Spin Animation */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Background Styles */
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #ff8a00 50%, #e52e71 50%); /* Gradient with vibrant colors */
+  bottom: 0;
+  left: -50%;
+  opacity: 0.7; /* Increased opacity for better visibility */
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+/* Content Styles */
+.content {
+  background-color: rgba(34, 34, 34, 0.9); /* Dark semi-transparent background */
+  border-radius: 0.25em;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Heading Styles */
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #ffca28; /* Bright yellow for h1 */
+}
+
+h3,
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #e0e0e0; /* Light grey for subheadings and paragraphs */
+  margin-bottom: 30px;
+}
+
+/* Button Styles */
+.share {
+  padding: 12px;
+  margin-top: 10px;
+  vertical-align: center;
+  background: #f57c00; /* Vibrant orange for buttons */
+  width: 80px;
+  height: 50px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s; /* Added transition for hover effect */
+  z-index: 1; /* Adjusted z-index for proper layering */
+}
+
+.share:hover {
+  background-color: #ffb300; /* Lighter orange on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Slide Animation Keyframes */
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+}
+
+header .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(135deg, rgba(159, 5, 255, 0.6) 10%, rgba(253, 94, 8, 0.6) 100%);
+}
